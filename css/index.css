@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(24, 24, 24);
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+
+header {
+    height: 110px;
+    background-color: whitesmoke;
+}
+
+header .header-top {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 10px 16px 6px 16px;
+    overflow: hidden;
+}
+
+.header-top .logo {
+    font-size: 2em;
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+
+header nav {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+nav .navbar-items {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+}
+
+.navbar-items li {
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.navbar-items li a {
+    color: white;
+    display: block;
+    padding: 0px 12px 0px 12px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.navbar-items li a i {
+    font-size: 1.2em;
+    color: white;
+}
+
+
+main {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+article {
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+    width: 82%;
+    padding: 18px;
+    padding-top: 22px;
+}
+
+@media only screen and (max-width: 460px) {
+    article {
+        width: 100%;
+        padding: 22px;
+        font-size: 1.32em;
+    }
+
+    article p {
+        font-family: 'B612', 'Open Sans';
+        line-height: 1.5em;
+    }
+}
+
+article {
+    font-size: 1.3em;
+    line-height: 1.45em;
+}
+
+article *::selection {
+    color: black;
+    background: lightblue;
+    border-radius: 8px;
+}
+
+article * {
+    margin-top: 20px;
+}
+
+article p {
+    font-family: 'B612', 'Open Sans';
+}
+
+article p::before {
+    content: "";
+    margin-left: 2em;
+}
+
+article blockquote{
+    background-color: rgba(255, 196, 0, 0.3);
+    display: block;
+    width: 100%;
+    padding: 8px;
+    padding-left: 12px;
+    border-left: 8px solid rgba(255, 174, 0, 0.7);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.quote-content::before, .quote-content::after {
+    font-size: 2em;
+    user-select: all;
+}
+
+blockquote .quote-content::before {
+    margin-left: 12px;
+    content: "\201C";
+}
+
+blockquote .quote-content::after {
+    content: "\201D";
+}
+
+blockquote .author::before {
+    content: '- ';
+    margin-left: 12px;
+}
+
+blockquote .author {
+    display: block;
+    width: 100%;
+    font-size: .8em;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+article .title {
+    margin: 14px;
+    margin-bottom: 22px;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+article .subtitle {
+    margin: 14px;
+    margin-bottom: 22px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+article a {
+    color: rgb(24, 130, 170);
+}
+
+article .img-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.img-container img {
+    display: inline-block;
+    width: 92%;
+    height: auto;
+}
+
+@media only screen and (min-width: 460px) and (max-width: 700px) {
+    .img-container img {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .img-container img {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .img-container img {
+        width: 60%;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: .8em;
+    padding: 34px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
